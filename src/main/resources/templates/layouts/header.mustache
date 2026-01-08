@@ -8,6 +8,14 @@
 
     <title>게시판</title>
 </head>
+
+{{#msg}}
+    <div class="alert alert-danger alert-dismissible fade show">
+        {{msg}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+{{/msg}}
+
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
