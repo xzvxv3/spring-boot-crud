@@ -1,0 +1,29 @@
+{{>layouts/header}}
+
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Content</th>
+    </tr>
+    </thead>
+
+    {{#post}}
+        <tbody>
+        <tr>
+            <th>{{id}}</th>
+            <td>{{title}}</td>
+            <td>{{content}}</td>
+        </tr>
+        </tbody>
+    {{/post}}
+
+</table>
+
+<a href="/posts/{{post.id}}/edit" class="btn btn-info">게시글 수정</a>
+<a href="/posts/{{post.id}}/delete" class="btn btn-danger">게시글 삭제</a>
+
+
+{{>layouts/footer}}

@@ -1,0 +1,21 @@
+{{>layouts/header}}
+
+{{#post}}
+<form class = "container mt-5" action="/posts/update" method="post">
+    <input name="id" type="hidden" value="{{id}}">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">제목</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" value="{{title}}" name="title">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">내용</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="content">{{content}}</textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">작성하기</button>
+    <a href="/posts/{{id}}" class="btn btn-secondary">뒤로가기</a>
+</form>
+{{/post}}
+
+{{>layouts/footer}}
