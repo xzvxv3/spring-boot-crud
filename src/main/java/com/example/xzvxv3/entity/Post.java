@@ -1,5 +1,4 @@
 package com.example.xzvxv3.entity;
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
