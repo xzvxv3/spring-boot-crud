@@ -7,10 +7,11 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 public class PostDto {
+    private Long id;
     private String title;
     private String content;
 
     public Post toEntity() {
-        return new Post(null, title, content);
+        return new Post(id, title, content);
     }
 }
